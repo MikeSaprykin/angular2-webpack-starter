@@ -8,24 +8,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-require('../public/css/style.css');
-require('./app.component.css');
-var primeng_1 = require('primeng/primeng');
-var router_1 = require("@angular/router");
-var header_login_1 = require("./header-login/header-login");
-var AppComponent = (function () {
-    function AppComponent() {
+var core_1 = require("@angular/core");
+var HeaderLogin = (function () {
+    function HeaderLogin() {
+        this.loggedIn = false;
     }
-    AppComponent = __decorate([
+    HeaderLogin = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: require('./app.component.html'),
-            directives: [router_1.ROUTER_DIRECTIVES, primeng_1.Button, header_login_1.HeaderLogin]
+            selector: 'header-login',
+            template: require("./header-login.html"),
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], HeaderLogin);
+    return HeaderLogin;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.HeaderLogin = HeaderLogin;
+//# sourceMappingURL=header-login.js.map
