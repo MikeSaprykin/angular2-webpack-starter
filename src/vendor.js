@@ -6,6 +6,7 @@ require('@angular/core');
 require('@angular/common');
 require('@angular/http');
 require('@angular/router');
+require('primeng/primeng');
 // RxJS
 require('rxjs');
 // Other vendors for example jQuery, Lodash or Bootstrap
