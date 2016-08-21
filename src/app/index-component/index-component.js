@@ -12,13 +12,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by Mike on 20.08.16.
  */
 var core_1 = require("@angular/core");
+var carousel_component_1 = require("../carousel-component/carousel-component");
 var IndexComponent = (function () {
     function IndexComponent() {
     }
     IndexComponent = __decorate([
         core_1.Component({
             selector: 'index-component',
-            template: require('./index-component.html')
+            template: require('./index-component.html'),
+            directives: [carousel_component_1.CarouselComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], IndexComponent);

@@ -9,28 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var common_1 = require('@angular/common');
-var HeaderLogin = (function () {
-    function HeaderLogin(fb) {
-        this.loggedIn = false;
-        this.loginForm = fb.group({
-            email: ["", common_1.Validators.required],
-            password: ["", common_1.Validators.required]
-        });
+var SignpageComponent = (function () {
+    function SignpageComponent() {
     }
-    HeaderLogin.prototype.doLogin = function (event, form) {
-        console.log(form.value);
-        event.preventDefault();
-        this.loggedIn = true;
-    };
-    HeaderLogin = __decorate([
+    SignpageComponent = __decorate([
         core_1.Component({
-            selector: 'header-login',
-            template: require("./header-login.html"),
+            selector: 'signpage-component',
+            template: require('./signpage-component.html')
         }), 
-        __metadata('design:paramtypes', [common_1.FormBuilder])
-    ], HeaderLogin);
-    return HeaderLogin;
+        __metadata('design:paramtypes', [])
+    ], SignpageComponent);
+    return SignpageComponent;
 }());
-exports.HeaderLogin = HeaderLogin;
-//# sourceMappingURL=header-login.js.map
+exports.SignpageComponent = SignpageComponent;
+//# sourceMappingURL=signpage-component.js.map

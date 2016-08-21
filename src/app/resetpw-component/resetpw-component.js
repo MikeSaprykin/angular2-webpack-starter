@@ -9,28 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var common_1 = require('@angular/common');
-var HeaderLogin = (function () {
-    function HeaderLogin(fb) {
-        this.loggedIn = false;
-        this.loginForm = fb.group({
-            email: ["", common_1.Validators.required],
-            password: ["", common_1.Validators.required]
-        });
+var ResetpwComponent = (function () {
+    function ResetpwComponent() {
     }
-    HeaderLogin.prototype.doLogin = function (event, form) {
-        console.log(form.value);
-        event.preventDefault();
-        this.loggedIn = true;
-    };
-    HeaderLogin = __decorate([
+    ResetpwComponent = __decorate([
         core_1.Component({
-            selector: 'header-login',
-            template: require("./header-login.html"),
+            selector: 'resetpw-component',
+            template: require('./resetpw-component.html')
         }), 
-        __metadata('design:paramtypes', [common_1.FormBuilder])
-    ], HeaderLogin);
-    return HeaderLogin;
+        __metadata('design:paramtypes', [])
+    ], ResetpwComponent);
+    return ResetpwComponent;
 }());
-exports.HeaderLogin = HeaderLogin;
-//# sourceMappingURL=header-login.js.map
+exports.ResetpwComponent = ResetpwComponent;
+//# sourceMappingURL=resetpw-component.js.map

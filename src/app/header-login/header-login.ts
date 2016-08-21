@@ -1,5 +1,5 @@
-
 import {Component} from "@angular/core";
+import {FormBuilder, Validators} from '@angular/common';
 
 
 @Component({
@@ -10,5 +10,20 @@ import {Component} from "@angular/core";
 export class HeaderLogin{
 
     loggedIn = false;
+    loginForm:Object;
+
+    constructor(fb: FormBuilder) {
+        this.loginForm = fb.group({
+            email:["", Validators.required],
+            password:["", Validators.required]
+        });
+    }
+
+    doLogin(event, form) {
+        console.log(form.value);
+        event.preventDefault();
+        this.loggedIn = true;
+    }
+
 
 }

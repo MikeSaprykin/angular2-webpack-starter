@@ -92,10 +92,6 @@ a:focus {
 .container {
   width: auto;
 }
-.logobrand{
-  width: 68%;
-  height: 68%;
-}
 .container-alt {
   margin-left: auto;
   margin-right: auto;
@@ -578,7 +574,6 @@ textarea.form-control {
   color: #565656;
   padding: 7px 12px;
   height: 38px;
-  display: inline-block;
   max-width: 100%;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1663,7 +1658,6 @@ body.fixed-left .side-menu.left {
   border: none;
   font-size: 13px;
   color: #36404a;
-  margin-left: 20px;
   padding-left: 20px;
   padding-right: 40px;
   background: #ebeff2;
@@ -2102,161 +2096,3 @@ body.fixed-left .side-menu.left {
     margin-top: 0px;
   }
 }
-.form-cl{
-    display: inline-block;
-}
-.waves-effect {
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  vertical-align: middle;
-  z-index: 1;
-  will-change: opacity, transform;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-.btn-rounded {
-  border-radius: 2em !important;
-  padding: 5px 20px;
-}
-.btn-rounded .btn-label {
-  padding: 7px 15px 7px 20px;
-  margin-left: -20px;
-}
-.btn-rounded .btn-label-right {
-  margin-right: -20px;
-  margin-left: 12px;
-}
-.btn-custom {
-  -moz-border-radius: 2px;
-  -moz-transition: all 400ms ease-in-out;
-  -o-transition: all 400ms ease-in-out;
-  -webkit-border-radius: 2px;
-  -webkit-transition: all 400ms ease-in-out;
-  background: transparent;
-  background-color: transparent !important;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  background-clip: padding-box;
-  border-width: 1px !important;
-  font-weight: 600;
-  transition: all 400ms ease-in-out;
-  background-clip: inherit;
-}
-
-.btn-label {
-  background: rgba(0, 0, 0, 0.05);
-  display: inline-block;
-  padding: 7px 15px;
-  border-radius: 3px 0 0 3px;
-  margin: -7px -13px;
-  margin-right: 12px;
-}
-.btn-label-right {
-  margin-left: 12px;
-  margin-right: -13px;
-  border-radius: 0px 3px 3px 0px;
-}
-.btn-group.open .dropdown-toggle {
-  box-shadow: none;
-}
-.btn-white,
-.btn-white:hover,
-.btn-white:focus,
-.btn-white:active,
-.btn-white.active,
-.btn-white.focus,
-.btn-white:active,
-.btn-white:focus,
-.btn-white:hover,
-.open > .dropdown-toggle.btn-white {
-  border: 1px solid #eaeaea !important;
-  background-color: #ffffff;
-  color: #4c5667;
-}
-.btn-custom.btn-info {
-    color: #34d3eb !important;
-}
-
-
-.btn-info:hover,
-.btn-info:focus,
-.btn-info:active,
-.btn-info.active,
-.btn-info.focus,
-.btn-info:active,
-.btn-info:focus,
-.btn-info:hover,
-.open > .dropdown-toggle.btn-info {
-  background-color: #34d3eb !important;
-  color: #ffffff;
-}
-.btn-custom.btn-info:hover{
-    color: #ffffff!important;
-}
-.btn-custom.btn-info:focus{
-    color: #ffffff!important;
-}
-
-.resps{
-  font-size: 9px;
-  position: absolute;
-  right: 5%;
-  top: 33px;
-  cursor: pointer;
-}
-
-/*CAROUSEL*/
-
-.carousel-fade .carousel-inner .item {
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-}
-.carousel-fade .carousel-inner .item,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  opacity: 0;
-}
-.carousel-fade .carousel-inner .active,
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-.carousel-fade .carousel-inner .next,
-.carousel-fade .carousel-inner .prev,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-.carousel-fade .carousel-control {
-  z-index: 2;
-}
-html,
-body,
-.carousel,
-.carousel-inner,
-.carousel-inner .item {
-  height: 100%;
-}
-.item:nth-child(1) {
-  background: #74C390;
-}
-.item:nth-child(2) {
-  background: #51BCE8;
-}
-.item:nth-child(3) {
-  background: #E46653;
-}
-

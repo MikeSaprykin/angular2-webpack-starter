@@ -14,6 +14,9 @@ require('./app.component.css');
 var primeng_1 = require('primeng/primeng');
 var router_1 = require("@angular/router");
 var header_login_1 = require("./header-login/header-login");
+var signpage_component_1 = require("./signpage-component/signpage-component");
+var resetpw_component_1 = require("./resetpw-component/resetpw-component");
+var carousel_component_1 = require("./carousel-component/carousel-component");
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -21,7 +24,7 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'my-app',
             template: require('./app.component.html'),
-            directives: [router_1.ROUTER_DIRECTIVES, primeng_1.Button, header_login_1.HeaderLogin]
+            directives: [router_1.ROUTER_DIRECTIVES, primeng_1.Button, header_login_1.HeaderLogin, signpage_component_1.SignpageComponent, resetpw_component_1.ResetpwComponent, carousel_component_1.CarouselComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
