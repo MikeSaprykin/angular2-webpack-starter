@@ -2251,12 +2251,12 @@ body,
   height: 100%;
 }
 .item:nth-child(1) {
-  background: #74C390;
+  background: #ffffff;
 }
 .item:nth-child(2) {
-  background: #51BCE8;
+  background: #ffffff;
 }
 .item:nth-child(3) {
-  background: #E46653;
+  background: #ffffff;
 }
 

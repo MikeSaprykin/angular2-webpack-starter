@@ -19,9 +19,11 @@ var HeaderLogin = (function () {
         });
     }
     HeaderLogin.prototype.doLogin = function (event, form) {
-        console.log(form.value);
-        event.preventDefault();
-        this.loggedIn = true;
+        if (form.valid) {
+            console.log(form.value);
+            event.preventDefault();
+            this.loggedIn = true;
+        }
     };
     HeaderLogin = __decorate([
         core_1.Component({

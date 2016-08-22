@@ -19,11 +19,12 @@ export class HeaderLogin{
         });
     }
 
-    doLogin(event, form) {
-        console.log(form.value);
-        event.preventDefault();
-        this.loggedIn = true;
+    doLogin(event:any, form:any) {
+        if (form.valid) {
+            console.log(form.value);
+            event.preventDefault();
+            this.loggedIn = true;
+        }
     }
-
 
 }

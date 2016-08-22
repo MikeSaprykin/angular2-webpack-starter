@@ -1,16 +1,16 @@
-<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel" data-slide-to="1"></li>
-        <li data-target="#carousel" data-slide-to="2"></li>
-    </ol>
-    <!-- Carousel items -->
-    <div class="carousel-inner">
-        <div class="active item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
+<div class="row">
+    <div class="col-md-12">
+        <carousel [interval]="myInterval" [noWrap]="noWrapSlides">
+            <slide *ngFor="let slidez of slides; let index=index"
+                   [active]="slidez.active">
+                <img [src]="slidez.image" style="margin:auto;">
+
+                <div class="carousel-caption">
+                    <h4>Slide {{index}}</h4>
+
+                    <p>{{slidez.text}}</p>
+                </div>
+            </slide>
+        </carousel>
     </div>
-    <!-- Carousel nav -->
-    <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
 </div>
